@@ -1,7 +1,7 @@
 export default function Home() {
   return (
-    <main className="min-h-screen bg-slate-50 text-slate-900">
-      <section className="mx-auto flex min-h-screen max-w-5xl flex-col justify-center px-6 py-20">
+    <main className="flex-1 bg-slate-50 px-6 py-20 text-slate-900">
+      <section className="mx-auto flex max-w-5xl flex-col justify-center py-20">
         <p className="mb-4 text-sm font-semibold uppercase tracking-wide text-slate-500">
           Developer Portfolio
         </p>
