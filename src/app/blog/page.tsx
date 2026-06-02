@@ -1,3 +1,5 @@
+import Container from '@/components/Container';
+
 const posts = [
   {
     title: '技術ブログを始める',
@@ -10,7 +12,7 @@ const posts = [
 export default function BlogPage() {
   return (
     <main className="flex-1 bg-slate-50 px-6 py-20 text-slate-900">
-      <div className="mx-auto max-w-4xl">
+      <Container>
         <p className="mb-3 text-sm font-semibold uppercase tracking-wide text-slate-500">Blog</p>
         <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">Blog</h1>
         <div className="mt-8 grid gap-4">
@@ -26,7 +28,7 @@ export default function BlogPage() {
             </a>
           ))}
         </div>
-      </div>
+      </Container>
     </main>
   );
 }
