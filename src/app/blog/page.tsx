@@ -1,14 +1,6 @@
 import Container from '@/components/Container';
 import BlogCard from '@/components/BlogCard';
-
-const posts = [
-  {
-    title: '技術ブログを始める',
-    description: 'このサイトで扱う技術メモや記事の方針について。',
-    slug: 'first-post',
-    publishedAt: '2026-05-21',
-  },
-];
+import { posts } from '@/lib/posts';
 
 export default function BlogPage() {
   return (
@@ -19,12 +11,12 @@ export default function BlogPage() {
         <div className="mt-8 grid gap-4">
           {posts.map((post) => (
             <BlogCard
-                key={post.slug}
-                title={post.title}
-                description={post.description}
-                slug={post.slug}
-                publishedAt={post.publishedAt}
-              />
+              key={post.slug}
+              title={post.title}
+              description={post.description}
+              slug={post.slug}
+              publishedAt={post.publishedAt}
+            />
           ))}
         </div>
       </Container>
