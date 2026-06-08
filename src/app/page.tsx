@@ -1,7 +1,9 @@
+import Link from 'next/link';
+
 export default function Home() {
   return (
-    <main className="min-h-screen bg-slate-50 text-slate-900">
-      <section className="mx-auto flex min-h-screen max-w-5xl flex-col justify-center px-6 py-20">
+    <main className="flex-1 bg-slate-50 px-6 py-20 text-slate-900">
+      <section className="mx-auto flex max-w-5xl flex-col justify-center py-20">
         <p className="mb-4 text-sm font-semibold uppercase tracking-wide text-slate-500">
           Developer Portfolio
         </p>
@@ -16,18 +18,18 @@ export default function Home() {
         </p>
 
         <div className="mt-8 flex flex-wrap gap-3">
-          <a
+          <Link
             href="/works"
             className="rounded-md bg-slate-900 px-5 py-3 text-sm font-semibold text-white transition hover:bg-slate-700"
           >
             Worksを見る
-          </a>
-          <a
+          </Link>
+          <Link
             href="/blog"
             className="rounded-md border border-slate-300 px-5 py-3 text-sm font-semibold text-slate-900 transition hover:bg-white"
           >
             Blogを見る
-          </a>
+          </Link>
         </div>
       </section>
     </main>
